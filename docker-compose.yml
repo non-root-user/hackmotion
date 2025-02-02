@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  analytics:
+    build:
+      context: ./analytics
+      dockerfile: Dockerfile
+    networks:
+      - app-network
+    environment:
+      - IS_REVERSE_PROXY=false
+      - IS_LOCAL_SERVER=true
+      - LOG_FOLDER=/var/log/analytics
+    volumes:
+      - /home/user/Desktop/logs:/var/log/analytics
+    ports:
+      - "5000:5000"
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    networks:
+      - app-network
+    ports:
+      - "3000:3000"
+
+networks:
+  app-network:
+    driver: bridge

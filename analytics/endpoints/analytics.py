@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 
 analytics_bp = Blueprint('analytics', __name__)
-is_reverse_proxy = os.environ.get('IS_REVERSE_PROXY', False)
+is_reverse_proxy = os.environ.get('IS_REVERSE_PROXY') == "true"
 
 
 def log_to_file(data):

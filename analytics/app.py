@@ -3,7 +3,7 @@ from flask_cors import CORS
 import endpoints
 import os
 
-is_local = os.environ.get("IS_LOCAL_SERVER", False)
+is_local = os.environ.get("IS_LOCAL_SERVER").lower() == "true"
 if is_local:
     cors_origins = "*"
 else:
