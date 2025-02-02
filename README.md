@@ -1,4 +1,4 @@
-# Project README
+# Hackmotion assignment
 
 ## How to Run the Apps
 
@@ -16,7 +16,7 @@
 
 3. Run the frontend application:
     ```sh
-    npm run serve
+    npm run dev
     ```
 
 ### Backend (Python Flask)
