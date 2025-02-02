@@ -22,6 +22,7 @@
 ### Backend (Python Flask)
 
 Analytics backend takes in three environment variables:
+
 IS_REVERSE_PROXY (default False) Changes the behaviour of ip address sourcing to accomodate reverse proxy usage.
 
 IS_LOCAL_SERVER (default False) Permits all CORS sourcepoints. Should only be used when in a testing environment.
