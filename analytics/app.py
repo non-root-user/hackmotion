@@ -17,4 +17,4 @@ app.config["CORS_HEADERS"] = "Content-Type"
 app.register_blueprint(endpoints.analytics_bp)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5001)

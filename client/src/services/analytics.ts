@@ -20,7 +20,7 @@ export class EventTypes {
 
 export class Analytics {
     // apiBaseURL: The base URL of the server's API
-    static apiBaseURL = "http://localhost:5000";
+    static apiBaseURL = "http://localhost:5001";
 
 
     static gatherData(): AnalyticsData {
