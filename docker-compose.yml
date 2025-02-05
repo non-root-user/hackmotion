@@ -14,7 +14,7 @@ services:
     volumes:
       - ./logs:/var/log/analytics
     ports:
-      - "5000:5000"
+      - "5001:5001"
 
   client:
     build:
