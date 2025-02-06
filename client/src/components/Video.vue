@@ -2,7 +2,7 @@
     <div class="video-view">
       <h1>The best solution for you: Impact Training Program</h1>
       <div class="video-container">
-        <video ref="video" loop @timeupdate="updateCards">
+        <video ref="video" loop @timeupdate="updateCards" muted>
           <source src="/media/impact-drill-video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
